@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+        android:id="@+id/plus_final_1stsegement"
+        android:paddingVertical= "10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/rectangle_2"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:paddingHorizontal="20dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ellipse_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                >
+                <View
+
+                    android:id="@+id/vector"
+                    android:layout_width="16dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_back"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+                <View
+                    android:id="@+id/ellipse_33"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ellipse_33"
+                    />
+
+                <TextView
+                    android:id="@+id/u_toronto_2"
+                    android:layout_width="285dp"
+                    android:layout_height="29dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:text="U Toronto 2020 | Admits"
+                    android:textAppearance="@style/u_toronto_2"
+                    android:gravity="top"
+                    />
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_add_mem"
+                android:background="@drawable/ellipse_19"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/rectangle_4"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:gravity="bottom"
+                android:background="@drawable/rectangle_4a"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DESCRIPTION"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#2D2D2D"
+                android:text="This group is exclusively for students who have got their admits from University of Toronto.">
+
+            </TextView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/rectangle_4a"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:gravity="bottom"
+                android:background="@drawable/rectangle_4a"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MEMBERS"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/groupdetails_members_container"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
