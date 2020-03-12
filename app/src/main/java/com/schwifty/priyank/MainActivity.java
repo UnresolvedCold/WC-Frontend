@@ -12,14 +12,21 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.chat_final);
+        setContentView(R.layout.plus_final);
 
         LayoutInflater inflater = LayoutInflater.from(this);
-        LinearLayout ParentElement = findViewById(R.id.chat_final_chats_container);
+        LinearLayout ParentElementGroups = findViewById(R.id.plus_final_suggested_groups_container);
+        LinearLayout ParentElementStudents = findViewById(R.id.plus_final_suggested_students_container);
 
-        for(int i = 0; i< 10; i++) {
-            View mView = inflater.inflate(R.layout.inflate_chats, null, false);
-            ParentElement.addView(mView);
+
+        for(int i = 0; i< 4; i++) {
+            View mView = inflater.inflate(R.layout.inflate_suggestedgps, null, false);
+            ParentElementGroups.addView(mView);
+        }
+
+        for(int i = 0; i< 4; i++) {
+            View mView = inflater.inflate(R.layout.inflate_suggestedstds, null, false);
+            ParentElementStudents.addView(mView);
         }
     }
 }

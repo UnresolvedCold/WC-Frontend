@@ -1,222 +1,233 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
-    <!-- Search -->
-    <View
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:id="@+id/canvas"
-        android:background="#EEEEEE" />
-
-    <TextView
-        android:id="@+id/chats"
-        android:layout_width="96dp"
-        android:layout_height="42dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="16dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="31dp"
-        android:text="@string/chats"
-        android:textAppearance="@style/chats"
-        android:gravity="top"
-        />
-
-    <View
-        android:id="@+id/searchbar"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="16dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="16dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="90dp"
-        android:background="@drawable/searchbar"
-
-        />
-
-    <ImageView
-        android:padding="7dp"
-        android:src="@drawable/vector"
-        android:id="@+id/ellipse_6"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="16dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/ellipse_6"
-        >
-
-    </ImageView>
-
-    <TextView
-        android:id="@+id/inputfiled"
-        android:layout_width="82dp"
-        android:layout_height="16dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="64dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="105dp"
-        android:text="@string/inputfiled"
-        android:textAppearance="@style/inputfiled"
-        android:gravity="top"
-        />
-
-    <!-- Search -->
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/searchicon"
-        android:layout_width="16dp"
-        android:layout_height="16dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="38dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="105dp"
-        android:background="@drawable/searchicon"
-        />
-
-    <!-- Chat Items -->
     <ScrollView
         android:scrollbars="none"
-        android:layout_marginTop="150dp"
+        android:layout_weight="1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:id="@+id/chat_final_chats_container"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:orientation="vertical" android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <!-- Remove the below relative layout and inflate
-            using inflate_chats.xml for dynamic addition of data -->
+            <!-- Search -->
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/canvas"
+                android:background="#EEEEEE" />
 
+            <TextView
+                android:id="@+id/chats"
+                android:layout_width="96dp"
+                android:layout_height="42dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="28dp"
+                android:text="@string/chats"
+                android:textAppearance="@style/chats"
+                android:gravity="top"
+                />
+
+            <View
+                android:id="@+id/searchbar"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/searchbar"
+
+                />
+
+            <ImageView
+                android:padding="7dp"
+                android:src="@drawable/vector"
+                android:id="@+id/ellipse_6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/ellipse_6"
+                >
+
+            </ImageView>
+
+            <!-- Search -->
             <RelativeLayout
-                android:paddingTop="10dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/searchicon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/searchicon"
+                />
+
+            <TextView
+                android:id="@+id/inputfiled"
+                android:layout_width="82dp"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="64dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="105dp"
+                android:text="@string/inputfiled"
+                android:textAppearance="@style/inputfiled"
+                android:gravity="top"
+                />
+
+            <!-- Chat Items -->
+
+            <LinearLayout
+                android:layout_marginTop="150dp"
+                android:id="@+id/chat_final_chats_container"
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:id="@+id/ellipse_5"
-                    android:layout_width="66dp"
-                    android:layout_height="66dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="16dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="0dp"
-                    android:background="@drawable/ellipse_5" >
+                <!-- Remove the below relative layout and inflate
+                using inflate_chats.xml for dynamic addition of data -->
 
-                </LinearLayout>
+                <RelativeLayout
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/chat_final_message"
-                    android:layout_width="242dp"
-                    android:layout_height="16dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="92dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="40dp"
-                    android:text="@string/rohit_where"
-                    android:textAppearance="@style/rohit_where"
-                    android:gravity="top"
-                    />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/ellipse_5"
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/ellipse_5" >
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:id="@+id/chat_final_active"
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="66dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="50dp"
-                    android:gravity="center"
-                    android:background="@drawable/ellipse_20">
-                    <View
-                        android:id="@+id/ellipse_21"
-                        android:layout_width="11.43dp"
-                        android:layout_height="11.43dp"
-                        android:background="@drawable/ellipse_21"
-                        android:translationZ="10dp"
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/chat_final_message"
+                        android:layout_width="242dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="92dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="40dp"
+                        android:text="@string/rohit_where"
+                        android:textAppearance="@style/rohit_where"
+                        android:gravity="top"
                         />
-                </LinearLayout>
 
-                <View
-                    android:id="@+id/online"
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="66dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="55dp"
-                    android:background="#00000000"
-                    />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/chat_final_active"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="66dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="50dp"
+                        android:gravity="center"
+                        android:background="@drawable/ellipse_20">
+                        <View
+                            android:id="@+id/ellipse_21"
+                            android:layout_width="11.43dp"
+                            android:layout_height="11.43dp"
+                            android:background="@drawable/ellipse_21"
+                            android:translationZ="10dp"
+                            />
+                    </LinearLayout>
 
-                <TextView
-                    android:id="@+id/chat_final_name"
-                    android:layout_width="195dp"
-                    android:layout_height="21dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="92dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/u_toronto_a"
-                    android:textAppearance="@style/u_toronto_a"
-                    android:gravity="top"
-                    />
+                    <View
+                        android:id="@+id/online"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="66dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="55dp"
+                        android:background="#00000000"
+                        />
 
-                <View
-                    android:id="@+id/chat_final_new_message_ball"
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="18dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="35dp"
-                    android:background="@drawable/ellipse_19"
-                    />
+                    <TextView
+                        android:id="@+id/chat_final_name"
+                        android:layout_width="195dp"
+                        android:layout_height="21dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="92dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/u_toronto_a"
+                        android:textAppearance="@style/u_toronto_a"
+                        android:gravity="top"
+                        />
 
-                <TextView
-                    android:id="@+id/chat_final_active_time"
-                    android:layout_width="44dp"
-                    android:layout_height="14dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="16dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="15dp"
-                    android:text="@string/pm"
-                    android:textAppearance="@style/pm"
-                    android:gravity="top"
-                    />
+                    <View
+                        android:id="@+id/chat_final_new_message_ball"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="18dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/ellipse_19"
+                        />
 
-                <TextView
-                    android:id="@+id/chat_final_new_message_count"
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="23dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="39dp"
-                    android:text="@string/some_id"
-                    android:textAppearance="@style/some_id"
-                    android:gravity="top"
-                    />
-            </RelativeLayout>
+                    <TextView
+                        android:id="@+id/chat_final_active_time"
+                        android:layout_width="44dp"
+                        android:layout_height="14dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/pm"
+                        android:textAppearance="@style/pm"
+                        android:gravity="top"
+                        />
 
-        </LinearLayout>
+                    <TextView
+                        android:id="@+id/chat_final_new_message_count"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="23dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="39dp"
+                        android:text="@string/some_id"
+                        android:textAppearance="@style/some_id"
+                        android:gravity="top"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
     </ScrollView>
-
 
     <!-- NavBar -->
     <LinearLayout
         android:translationZ="1000dp"
         android:id="@+id/navbackgrou"
-        android:layout_width="0dp"
-        android:layout_height="78dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
@@ -231,18 +242,18 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center">
-        <View
-            android:id="@+id/chat_icon"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/chat_icon"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Chat"
-            android:textColor="#0199F9">
-        </TextView>
+            <View
+                android:id="@+id/chat_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_chat_icon"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:textColor="#0199F9">
+            </TextView>
         </LinearLayout>
 
         <LinearLayout
@@ -256,9 +267,9 @@
             >
             <View
                 android:id="@+id/browse_icon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/browse_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_browse_icon"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -278,9 +289,9 @@
             >
             <View
                 android:id="@+id/profile_icon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/profile_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_profile_icon"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -292,5 +303,4 @@
 
     </LinearLayout>
 
-
-</RelativeLayout>
+</LinearLayout>

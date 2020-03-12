@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D8D8"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/plus_final_1stsegement"
+                    android:background="#eeeeee"
+                    android:paddingVertical= "20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/ellipse_6"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        >
+                        <View
+                            android:id="@+id/vector"
+                            android:layout_width="16dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/ic_back"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rectangle_2"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="54dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/searchbar"
+                        >
+                        <View
+                            android:layout_marginStart="25dp"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:background="@drawable/searchicon">
+
+                        </View>
+
+                        <EditText
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:textColor="#555555"
+                            android:textSize="14sp"
+                            android:textColorHint="#888888"
+                            android:hint="Search for groups, students and mentors"
+                            android:background="@null"
+                            >
+
+                        </EditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="15dp"
+                            android:background="@drawable/ellipse_6_b"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_group_29">
+
+                            </ImageView>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Create New Group"
+                            android:textColor="#0199F9"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/plus_final_0thsegement"
+                    android:background="#eeeeee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/plus_final_1stsegement"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
+
+                    <View
+                        android:id="@+id/ellipse_5"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/ellipse_5"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/ellipse_5"
+                        android:text="Profiles You Follow"
+                        android:textSize="16sp"
+                        android:textColor="#000000"/>
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_next"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/plus_final_2ndsegement"
+                    android:background="#eeeeee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/plus_final_0thsegement"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/Suggestedgrpshead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/suggested_g"
+                            android:layout_width="144dp"
+                            android:layout_height="19dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/suggested_g"
+                            android:textAppearance="@style/suggested_g"
+                            android:gravity="top"
+                            />
+
+                        <TextView
+                            android:id="@+id/see_all"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="32dp"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/see_all"
+                            android:textAppearance="@style/see_all"
+                            android:gravity="top"
+                            />
+
+                        <ImageView
+                            android:layout_centerVertical="true"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/ic_next" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/plus_final_suggested_groups_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Suggestedgrpshead"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_toEndOf="@+id/ellipse_5b"
+                                android:text="U Toronto | Admits"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <View
+                                android:id="@+id/ellipse_5b"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/ellipse_5" />
+
+                            <TextView
+                                android:id="@+id/rectangle_4"
+                                android:layout_width="75dp"
+                                android:layout_height="31dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="16dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/rectangle_4"
+                                android:gravity="center"
+                                android:text="Join"
+                                android:textSize="12sp"
+                                android:textColor="#000000"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/plus_final_3rdsegement"
+                    android:background="#eeeeee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/plus_final_2ndsegement"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/Suggestedstdshead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/suggested_s"
+                            android:layout_width="144dp"
+                            android:layout_height="19dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_alignParentTop="true"
+                            android:text="Suggested Students"
+                            android:textAppearance="@style/suggested_g"
+                            android:gravity="top"
+                            />
+
+                        <TextView
+                            android:id="@+id/see_all2"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="32dp"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/see_all"
+                            android:textAppearance="@style/see_all"
+                            android:gravity="top"
+                            />
+
+                        <ImageView
+                            android:layout_centerVertical="true"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/ic_next" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/plus_final_suggested_students_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Suggestedstdshead"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_toEndOf="@+id/ellipse_5c"
+                                android:text="Rajat Singh"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <View
+                                android:id="@+id/ellipse_5c"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/ellipse_5" />
+
+                            <TextView
+                                android:id="@+id/rectangle_4a"
+                                android:layout_width="75dp"
+                                android:layout_height="31dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="16dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/rectangle_4"
+                                android:gravity="center"
+                                android:text="View"
+                                android:textSize="12sp"
+                                android:textColor="#000000"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
