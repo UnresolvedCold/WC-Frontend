@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ellipse_5"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/ellipse_5" >
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/chat_final_message"
+        android:layout_width="242dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="92dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/rohit_where"
+        android:textAppearance="@style/rohit_where"
+        android:gravity="top"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/chat_final_active"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:background="@drawable/ellipse_20">
+        <View
+            android:id="@+id/ellipse_21"
+            android:layout_width="11.43dp"
+            android:layout_height="11.43dp"
+            android:background="@drawable/ellipse_21"
+            android:translationZ="10dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/online"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:background="#00000000"
+        />
+
+    <TextView
+        android:id="@+id/chat_final_name"
+        android:layout_width="195dp"
+        android:layout_height="21dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="92dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/u_toronto_a"
+        android:textAppearance="@style/u_toronto_a"
+        android:gravity="top"
+        />
+
+    <View
+        android:id="@+id/chat_final_new_message_ball"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/ellipse_19"
+        />
+
+    <TextView
+        android:id="@+id/chat_final_active_time"
+        android:layout_width="44dp"
+        android:layout_height="14dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/pm"
+        android:textAppearance="@style/pm"
+        android:gravity="top"
+        />
+
+    <TextView
+        android:id="@+id/chat_final_new_message_count"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="39dp"
+        android:text="@string/some_id"
+        android:textAppearance="@style/some_id"
+        android:gravity="top"
+        />
+</RelativeLayout>
