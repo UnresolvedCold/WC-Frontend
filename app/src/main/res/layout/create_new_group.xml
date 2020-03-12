@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/plus_final_1stsegement"
+        android:paddingVertical= "10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/rectangle_2"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:paddingHorizontal="20dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ellipse_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                >
+                <View
+                    android:id="@+id/vector"
+                    android:layout_width="16dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_back"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Group Details"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/ellipse_35"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="145dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="62dp"
+            android:background="@drawable/ellipse_35"
+            />
+
+        <TextView
+            android:id="@+id/enter_group"
+            android:layout_width="142dp"
+            android:layout_height="23dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="77dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="278dp"
+            android:text="Enter Group Name"
+            android:textAppearance="@style/enter_group"
+            android:gravity="top"
+            />
+        <View
+            android:id="@+id/vector_7"
+            android:layout_width="273dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="76.5dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="301dp"
+            android:background="@drawable/ic_line"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/rectangle_4"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="351dp"
+            android:background="@drawable/rectangle_4a"
+            android:gravity="bottom"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DESCRIPTION"
+                android:textColor="#000000"
+                android:textSize="15sp"></TextView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
