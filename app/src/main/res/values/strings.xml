@@ -13,6 +13,8 @@
     <string name="name">Name</string>
 
     <string name="what_univer">What universities are you interested in?</string>
+    <string name="what_cour">What courses are you interested in?</string>
+
     <string name="university_">University Name</string>
     <string name="university_2">University of Toronto</string>
     <string name="course">Course</string>

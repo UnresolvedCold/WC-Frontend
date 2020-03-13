@@ -36,5 +36,13 @@ public class profile2 extends AppCompatActivity {
                     startActivity(i);
             }
         });
+
+        findViewById(R.id.NotYetDecided).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent (profile2.this,profile2_not_decided.class);
+                startActivity(i);
+            }
+        });
     }
 }
