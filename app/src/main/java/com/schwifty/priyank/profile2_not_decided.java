@@ -2,6 +2,7 @@ package com.schwifty.priyank;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,6 +29,15 @@ public class profile2_not_decided extends AppCompatActivity {
 
                 ParentElementGroups.addView(mView);
 
+            }
+        });
+
+
+        findViewById(R.id.NextButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent (profile2_not_decided.this,profile3.class);
+                startActivity(i);
             }
         });
 

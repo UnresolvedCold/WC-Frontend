@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:label">
-        <activity android:name=".profile2_not_decided"></activity>
+        <activity android:name=".profile3"></activity>
+        <activity android:name=".profile2_not_decided" />
         <activity android:name=".profile2_0" />
         <activity android:name=".profile2" />
         <activity android:name=".MainActivity">

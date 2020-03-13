@@ -44,5 +44,13 @@ public class profile2 extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        findViewById(R.id.NextButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent (profile2.this,profile3.class);
+                startActivity(i);
+            }
+        });
     }
 }

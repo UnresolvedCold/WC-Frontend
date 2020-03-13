@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/what_univer"
+                android:layout_width="378dp"
+                android:layout_height="71dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="18dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="48dp"
+                android:text="What about your test scores?"
+                android:textAppearance="@style/what_univer"
+                android:lineSpacingExtra="4sp"
+                android:translationY="-1.93sp"
+                android:gravity="top"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/NextButton"
+            android:layout_width="366dp"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="NEXT"
+            android:background="@drawable/frame_2">
+        </Button>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/rectangle_6"
+            android:layout_width="151dp"
+            android:layout_height="96dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="162dp"
+            android:background="@drawable/rectangle_6a"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="GRE"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/rectangle_6a"
+            android:layout_width="151dp"
+            android:layout_height="96dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="162dp"
+            android:padding="10dp"
+            android:background="@drawable/rectangle_6a"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="GMAT"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/rectangle_6b"
+            android:layout_width="151dp"
+            android:layout_height="96dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="298dp"
+            android:background="@drawable/rectangle_6a"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="IELTS"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/rectangle_6c"
+            android:layout_width="151dp"
+            android:layout_height="96dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="298dp"
+            android:background="@drawable/rectangle_6a"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="TOEFL"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/SkipForNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/NextButton"
+            android:layout_marginBottom="20dp"
+            android:text="Skip for now"
+            android:layout_centerHorizontal="true"
+
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
