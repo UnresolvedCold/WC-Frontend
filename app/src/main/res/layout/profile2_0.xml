@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/rectangle_2"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:paddingHorizontal="20dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ellipse_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                >
+                <View
+                    android:id="@+id/vector"
+                    android:layout_width="16dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_back"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add University"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/university_"
+            android:layout_width="94dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="72dp"
+            android:text="@string/university_"
+            android:textAppearance="@style/university_"
+            android:gravity="top"
+            />
+
+        <EditText
+            android:id="@+id/university_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="92dp"
+            android:hint="@string/university_2"
+            android:text="@string/university_2"
+            android:textAppearance="@style/university_2"
+            />
+
+        <EditText
+            android:id="@+id/course_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="179dp"
+            android:hint="Human Computer Interaction"
+            android:text="Human Computer Interaction"
+            android:textAppearance="@style/university_2"
+            />
+
+        <TextView
+            android:id="@+id/course"
+            android:layout_width="41dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="159dp"
+            android:text="@string/course"
+            android:textAppearance="@style/course"
+            android:gravity="top"
+            />
+
+        <TextView
+            android:id="@+id/status_sele"
+            android:layout_width="109dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="246dp"
+            android:text="@string/status_sele"
+            android:textAppearance="@style/status_sele"
+            android:gravity="top"
+            />
+
+        <!-- Group 107 -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/group_107"
+            android:layout_width="180dp"
+            android:layout_height="53dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="342dp"
+            android:gravity="center"
+            android:background="@drawable/rectangle_6a"
+
+            >
+
+            <TextView
+                android:id="@+id/label107"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admit"
+                android:textSize="16sp"
+                android:textColor="#333333"/>
+        </LinearLayout>
+
+
+
+        <!-- Group 112 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/group_112"
+            android:layout_width="180dp"
+            android:layout_height="53dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="275dp"
+            android:gravity="center"
+            android:background="@drawable/rectangle_6a"
+            >
+
+            <TextView
+                android:id="@+id/label112"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interested"
+                android:textSize="16sp"
+                android:textColor="#333333"/>
+
+        </LinearLayout>
+
+        <!-- Group 111 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/group_111"
+            android:layout_width="180dp"
+            android:layout_height="53dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="214dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:layout_marginTop="342dp"
+            android:background="@drawable/rectangle_6a"
+            >
+            <TextView
+                android:id="@+id/label111"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reject"
+                android:textSize="16sp"
+                android:textColor="#333333"/>
+        </LinearLayout>
+
+
+
+        <!-- Group 113 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/group_113"
+            android:layout_width="180dp"
+            android:gravity="center"
+            android:layout_height="53dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="214dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="275dp"
+            android:background="@drawable/rectangle_6a"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Applied"
+                android:textSize="16sp"
+                android:id="@+id/label113"
+
+                android:textColor="#333333"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ApplicationDateContainer"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="430dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ApplicationDateLabel"
+
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:gravity="top"
+                android:text="Application Date"
+                android:textAppearance="@style/course" />
+
+            <EditText
+                android:id="@+id/ApplicationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:text=""
+                android:textAppearance="@style/university_2"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ExtraDateContainer"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="520dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ExtraDateLabel"
+
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:gravity="top"
+                android:text="Applied Date"
+                android:textAppearance="@style/course" />
+
+            <EditText
+                android:id="@+id/ExtraDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:text=""
+                android:textAppearance="@style/university_2"
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/profile_2_0_NextButton"
+            android:layout_width="366dp"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="SAVE"
+            android:background="@drawable/frame_2">
+        </Button>
+
+    </RelativeLayout>
+
+</LinearLayout>

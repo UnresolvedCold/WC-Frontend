@@ -8,4 +8,13 @@
     <string name="some_id">13</string>
     <string name="suggested_g">Suggested Groups</string>
     <string name="see_all">See all</string>
+    <string name="let_s_get_t">Let\'s get to know you better</string>
+    <string name="so_we_can_m">So we can match you with suitable groups, students, seniors and more!</string>
+    <string name="name">Name</string>
+
+    <string name="what_univer">What universities are you interested in?</string>
+    <string name="university_">University Name</string>
+    <string name="university_2">University of Toronto</string>
+    <string name="course">Course</string>
+    <string name="status_sele">Status (Select one)</string>
 </resources>

@@ -16,11 +16,11 @@
             android:id="@+id/carouselView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:fillColor="#FFFFFFFF"
-            app:pageColor="#00000000"
+            app:fillColor="#686868"
+            app:pageColor="#CACACA"
             app:slideInterval="30000"
-            app:strokeColor="#FF777777"
-            app:strokeWidth="1dp"
+            app:strokeColor="#FFFFFF"
+            app:strokeWidth="3dp"
             app:radius="5dp"
             android:layout_marginBottom="20dp"/>
         <LinearLayout

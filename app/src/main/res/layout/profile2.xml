@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/what_univer"
+                android:layout_width="378dp"
+                android:layout_height="71dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="18dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="48dp"
+                android:text="@string/what_univer"
+                android:textAppearance="@style/what_univer"
+                android:lineSpacingExtra="4sp"
+                android:translationY="-1.93sp"
+                android:gravity="top"
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/NotYetDecided"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/NextButton"
+            android:layout_marginBottom="20dp"
+            android:text="Not yet decided"
+            android:layout_centerHorizontal="true"
+
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/NextButton"
+            android:layout_width="366dp"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="NEXT"
+            android:background="@drawable/frame_2a">
+        </Button>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/UniversitiesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="169dp"
+            android:gravity="center_horizontal"
+            android:elevation="10dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/AddUniversity"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/UniversitiesList"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_2"
+            android:elevation="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_plus"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Add University"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

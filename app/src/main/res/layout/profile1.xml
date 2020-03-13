@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+
+            android:id="@+id/hi_there_"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="45dp"
+            android:text="Hi there!"
+            android:textAppearance="@style/hi_there_"
+            android:lineSpacingExtra="0sp"
+            android:gravity="top"
+            />
+
+        <TextView
+            android:id="@+id/let_s_get_t"
+            android:layout_width="228dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="96dp"
+            android:text="@string/let_s_get_t"
+            android:textAppearance="@style/let_s_get_t"
+            android:lineSpacingExtra="5sp"
+            android:translationY="-2.75sp"
+            android:gravity="top"
+            />
+
+        <TextView
+            android:id="@+id/so_we_can_m"
+            android:layout_width="367dp"
+            android:layout_height="50dp"
+           android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="137dp"
+            android:text="@string/so_we_can_m"
+            android:textAppearance="@style/so_we_can_m"
+            android:lineSpacingExtra="5sp"
+            android:translationY="-2.75sp"
+            android:gravity="center_horizontal|top"
+            />
+
+        <View
+            android:id="@+id/ellipse_47"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="124dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="289dp"
+            android:background="@drawable/ellipse_47"
+            />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="250dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="73dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="520dp"
+            android:hint="@string/name"
+            android:textAppearance="@style/name"
+            android:lineSpacingExtra="16sp"
+            android:translationY="-7.9sp"
+            android:gravity="top"
+            />
+
+        <Button
+            android:id="@+id/NextButton"
+            android:layout_width="366dp"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="NEXT"
+            android:background="@drawable/frame_2">
+        </Button>
+
+    </RelativeLayout>
+
+</LinearLayout>

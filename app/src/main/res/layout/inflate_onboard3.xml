@@ -3,12 +3,32 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
+    <RelativeLayout
         android:id="@+id/onboarding_image"
         android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:src="@drawable/onboarding1"></ImageView>
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="103dp"
+            android:layout_height="105.81dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="149dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="209dp"
+            android:background="@drawable/rectangle_6">
+
+            <ImageView
+                android:src="@drawable/pic_loans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
     <TextView
         android:padding="10dp"
