@@ -67,6 +67,7 @@
             android:id="@+id/university_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:layout_marginLeft="20dp"
             android:layout_alignParentTop="true"
             android:layout_marginTop="92dp"
@@ -82,6 +83,7 @@
             android:layout_marginLeft="20dp"
             android:layout_alignParentTop="true"
             android:layout_marginTop="179dp"
+            android:layout_centerHorizontal="true"
             android:hint="Human Computer Interaction"
             android:text="Human Computer Interaction"
             android:textAppearance="@style/university_2"
@@ -171,8 +173,8 @@
             android:id="@+id/group_111"
             android:layout_width="180dp"
             android:layout_height="53dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="214dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
             android:layout_alignParentTop="true"
             android:gravity="center"
             android:layout_marginTop="342dp"
@@ -197,8 +199,8 @@
             android:layout_width="180dp"
             android:gravity="center"
             android:layout_height="53dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="214dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
             android:layout_alignParentTop="true"
             android:layout_marginTop="275dp"
             android:background="@drawable/rectangle_6a"
@@ -215,6 +217,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_centerHorizontal="true"
             android:id="@+id/ApplicationDateContainer"
             android:layout_marginLeft="20dp"
             android:layout_alignParentTop="true"
@@ -247,6 +250,7 @@
         <LinearLayout
             android:id="@+id/ExtraDateContainer"
             android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
             android:orientation="vertical"
             android:layout_width="match_parent"
